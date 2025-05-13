@@ -26,8 +26,8 @@ A lightweight, containerized embedding API that runs locally using [sentence-tra
 ### ▶️ Build and run with Docker
 
 ```bash
-docker build -t mini-embed-service .
-docker run -d -p 5000:5000 --name mini-embed-service mini-embed-service
+docker build -t mini-embed .
+docker run -d -p 5000:5000 --name mini-embed mini-embed
 ```
 
 ### 📡 Test the API
