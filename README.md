@@ -1,4 +1,4 @@
-# 🧠 Mini Embed Server
+# 🧠 Mini Embed Service
 
 A lightweight, containerized embedding API that runs locally using [sentence-transformers](https://www.sbert.net/). Designed to power semantic search and retrieval-augmented generation (RAG) pipelines **without relying on OpenAI or external APIs**.
 
@@ -26,8 +26,8 @@ A lightweight, containerized embedding API that runs locally using [sentence-tra
 ### ▶️ Build and run with Docker
 
 ```bash
-docker build -t mini-embed-server .
-docker run -d -p 5000:5000 --name mini-embed-server mini-embed-server
+docker build -t mini-embed-service .
+docker run -d -p 5000:5000 --name mini-embed-service mini-embed-service
 ```
 
 ### 📡 Test the API
