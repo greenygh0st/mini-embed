@@ -5,7 +5,12 @@ import logging
 # initialize Flask app and SentenceTransformer model
 app = Flask(__name__)
 # setup model
-model = SentenceTransformer('all-MiniLM-L6-v2')
+# model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer(
+    "nomic-ai/nomic-embed-text-v1",
+    trust_remote_code=True,  # important for this repo
+    device="cpu"
+)
 
 # define a route for embedding
 @app.route("/embed", methods=["POST"])

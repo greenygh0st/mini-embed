@@ -7,7 +7,7 @@ A lightweight, containerized embedding API that runs locally using [sentence-tra
 ## 🚀 Features
 
 - Runs locally via Flask + Docker
-- Uses the `all-MiniLM-L6-v2` model (384-dim embeddings)
+- Uses the `nomic-ai/nomic-embed-text-v1` model (768-dim embeddings)
 - Accepts text over HTTP and returns vector embeddings
 - CPU-friendly — no GPU required
 - Built-in request logging to STDOUT

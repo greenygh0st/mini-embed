@@ -9,7 +9,8 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     && pip install --no-cache-dir \
     flask \
-    sentence-transformers
+    sentence-transformers \
+    einops
 
 COPY embed_server.py .
 
