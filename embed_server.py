@@ -5,6 +5,7 @@ import logging
 # initialize Flask app and SentenceTransformer model
 app = Flask(__name__)
 # setup model
+# TODO: Allow for multiple specifc models
 # model = SentenceTransformer('all-MiniLM-L6-v2')
 model = SentenceTransformer(
     "nomic-ai/nomic-embed-text-v1",
