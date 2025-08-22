@@ -5,7 +5,7 @@ import logging
 # initialize Flask app and SentenceTransformer model
 app = Flask(__name__)
 # setup model
-# TODO: Allow for multiple specifc models
+# TODO: Allow for multiple specifc models - SM - MD - LG
 # model = SentenceTransformer('all-MiniLM-L6-v2')
 model = SentenceTransformer(
     "nomic-ai/nomic-embed-text-v1",
@@ -49,4 +49,5 @@ def health():
 
 # run the server
 if __name__ == "__main__":
+    # run on 5000 and proxy for production use
     app.run(host="0.0.0.0", port=5000)
