@@ -11,6 +11,7 @@ model = SentenceTransformer(
     "nomic-ai/nomic-embed-text-v1",
     trust_remote_code=True,  # important for this repo
     device="cpu"
+    # we are just going to use the 768 vector size
 )
 
 # define a route for embedding
