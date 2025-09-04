@@ -2,6 +2,11 @@
 
 A lightweight, containerized embedding API that runs locally using [sentence-transformers](https://www.sbert.net/). Designed to power semantic search and retrieval-augmented generation (RAG) pipelines **without relying on OpenAI or external APIs**.
 
+Docker Image:
+```
+greenygh0st/mini-embed
+```
+
 ---
 
 ## 🚀 Features
