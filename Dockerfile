@@ -7,11 +7,11 @@ WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
     build-essential \
+    curl \
     && pip install --no-cache-dir \
     flask \
     sentence-transformers \
-    einops \
-    curl
+    einops
 
 COPY embed_server.py .
 
