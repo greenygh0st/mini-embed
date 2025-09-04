@@ -10,7 +10,8 @@ RUN apt-get update && apt-get install -y \
     && pip install --no-cache-dir \
     flask \
     sentence-transformers \
-    einops
+    einops \
+    curl
 
 COPY embed_server.py .
 
