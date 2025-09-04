@@ -14,6 +14,8 @@ RUN apt-get update && apt-get install -y \
 
 COPY embed_server.py .
 
+HEALTHCHECK CMD curl -f http://localhost:5000/health || exit 1
+
 EXPOSE 5000
 
 CMD ["python", "embed_server.py"]
