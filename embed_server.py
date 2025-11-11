@@ -41,7 +41,7 @@ def embed():
     logging.info(f"Generated embedding with {len(embedding)} dimensions")
 
     # Return the embedding as a JSON response
-    return jsonify({"embedding": embedding})
+    return jsonify({"embedding": embedding, "model": "nomic-embed-text-v1", "vector_size": len(embedding)})
 
 # define a route for health check
 @app.route("/health", methods=["GET"])
